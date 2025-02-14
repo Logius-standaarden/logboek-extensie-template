@@ -38,4 +38,8 @@ let respecConfig = {
           uri: "template.pdf",
       },
   ],
+
+  xref: {
+    url: new URL('js/xrefs.json')
+  },
 };
