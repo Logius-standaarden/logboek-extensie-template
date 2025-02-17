@@ -1,0 +1,36 @@
+{
+    "results": [
+      {
+        "id": "1",
+        "query": {
+          "term": "betrokkene",
+          "types": ["_CONCEPT_"],
+          "id": "1"
+        },
+        "result": [
+          {
+            "shortname": "local-1",
+            "type": "dfn",
+            "normative": true,
+            "uri": "https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-betrokkenen"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "query": {
+          "term": "logboek",
+          "types": ["_CONCEPT_"],
+          "id": "2"
+        },
+        "result": [
+          {
+            "shortname": "local-2",
+            "type": "dfn",
+            "normative": true,
+            "uri": "https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-logboeken"
+          }
+        ]
+      }
+    ]
+}
