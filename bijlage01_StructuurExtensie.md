@@ -11,7 +11,3 @@ Beschrijf hierin de aanvullende technische specificaties op de core standaard.
 In dit kopstuk worden de verschillende use cases van de extensie beschreven
 1. Versiebeheer<br>
 Hierin wordt de versiebeheer beschreven.
-
-De volgende format moet gebruikt worden:
-
-moet nog toegevoegd worden
