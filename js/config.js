@@ -1,23 +1,21 @@
 let respecConfig = {
   useLogo: true,
   useLabel: true,
+  maxTocLevel: 3,
   license: "cc-by",
-  specStatus: "DEF",
-  specType: "HR",
-  pubDomain: "dk",
-  shortName: "template",
-  publishDate: "2023-06-21",
-  publishVersion: "0.0.3",
-  
-  previousPublishVersion: "0.0.2",
-  previousPublishDate: "2022-06-24",
-  previousMaturity: "WV",
+  specStatus: "WV",
+  specType: "PR",
+  pubDomain: "logboek",
+  shortName: "logboek-extensie-template",
+  publishDate: "2025-03-31",
+  publishVersion: "0.9",
+
   editors:
     [
       {
         name: "Logius Standaarden",
         company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        companyURL: "https://logius.nl",
       }
     ],
   authors:
@@ -25,10 +23,10 @@ let respecConfig = {
       {
         name: "Logius Standaarden",
         company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        companyURL: "https://logius.nl",
       }
     ],
-  github: "https://github.com/Logius-standaarden/ReSpec-template",
+  github: "https://github.com/Logius-standaarden/logboek-extensie-template",
 
 
   // Create PDF and link to file in header (optional):

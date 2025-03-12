@@ -1,85 +1,35 @@
-## ReSpec template instructies
+# Logboek Dataverwerkingen
 
-ReSpec is een tool om html en pdf documenten te genereren op basis van markdown content.
+## Deze standaard is in ontwikkeling 
 
-Gebruik de knop [_Use this template_](https://github.com/Logius-standaarden/ReSpec-template/generate) om aan de slag te gaan. Dit maakt een kopie van de template in uw eigen GitHub repository die dan aangepast en uitgebreid kan worden.
+- De laatste versie van de standaard online lezen - [ReSpec publicatie](https://logius-standaarden.github.io/logboek-dataverwerkingen/)
+- Meedoen aan de discussie en ontwikkeling kan via - [Mattermost Digilab omgeving](https://digilab.overheid.nl/chat/verwerkingenlogging)
+- vragen kunnen worden gemailed aan api@logius.nl of als issue worden ingebracht [via deze link](https://github.com/Logius-standaarden/logboek-dataverwerkingen/issues)
 
-De dynamische pagina is van het template document [hier](https://logius-standaarden.github.io/ReSpec-template/) te zien.
+## Inleiding
 
-Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden 
-automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch.
+De overheid wil voor burgers en bedrijven zo transparant mogelijk zijn in de omgang met hun data. Daarom is het bij de informatieverwerking in datasets belangrijk om voor elke mutatie of raadpleging vast te leggen wie deze actie wanneer uitvoert, en waarom. Deze herleidbaarheid speelt zowel een rol in het kader van de wetgeving op het gebied van privacy als ook het streven naar openheid en transparantie bij de overheid. Voor een optimale samenwerking over organisaties en bronnen heen is voor deze logging een algemene standaard nodig.
 
-### Vereiste voor gebruik
-- Kennis van git/github
-- Kennis van markdown en/of HTML
-- Kennis van de vorm van een Javascript object
-- Een webserver om de documentatie te hosten
+Het project Logboek Dataverwerkingen (voorheen: Verwerkingenlogging) maakt deel uit van het [actieplan Data bij de Bron](https://www.digitaleoverheid.nl/data-bij-de-bron/) en onderzoekt met Digilab in samenwerking met diverse overheidspartijen (ministeries, uitvoeringsorganisaties en gemeentes) of we op basis van de tot nu toe opgedane inzichten een overheidsbrede standaard kunnen vaststellen. Na het succesvol beproeven van de standaard wordt deze voorgesteld voor opname in de [‘Pas toe of leg uit’-lijst van het Forum voor Standaardisatie](https://forumstandaardisatie.nl/pas-toe-leg-uit-beleid).
 
-### Gebruikersinstructie
-Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.  
-Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/).
+> bron: https://digilab.overheid.nl/projecten/logboek-dataverwerkingen/
 
-Aanpassingen maken aan het document gaat op 2 manieren:
-- De configuratie van het document aanpassing in de config files
-- Markdown files toevoegen/veranderen
+## Doel
 
-De **configuratie files** bevat informatie over de organisatie en over 
-de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
-voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files:
-[organisation-config.js](js/organisation-config.js) en [config.js](js/config.js).
-Deze files zijn te vinden in de `js` folder.
+De standaard Logboek Dataverwerkingen beschrijft een manier om technisch interoperabele functionaliteit voor het loggen van dataverwerkingen te implementeren, door voor de volgende functionaliteit de interface en het gedrag voor te schrijven:
 
-De organisation_config bevat informatie over de organisatie, de informatie in deze file 
-zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
-zelf te hosten zodat hij in alle documentatie van de organisatie gebruikt kan worden en
-niet elke keer gekopieerd hoeft te worden
+- het wegschrijven van logs van dataverwerkingen
+- het aan elkaar relateren van logs van dataverwerkingen
+- het aan elkaar relateren van dataverwerkingen over de grenzen van systemen
 
-De document_config bevat informatie die alleen relevant is voor het huidige document.
+## Verwijzingen
 
-Beide configuratie bestanden worden gelinkt in de `index.html` file.
+De Logboek Dataverwerkingen (LDV) standaard bestaat uit de volgende vijf documenten:
 
-**Markdown files** bevatten de content van het document. Alle content
-kan in 1 document, maar het is aan te raden om de content te splitsen
-in verschillende files met een toepasselijke naam om onderhoud 
-makkelijker te maken.
-
-Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
-aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
-toe te voegen aan het ```content``` object in de ```config.js```. 
-De volgorde van ```content``` bepaalt de volgorde in het resulterende document.
-
-```content: {"ch01": "informative", "mermaid": ""},```
-Deze code voegt 2 markdown files toe:
-- `ch01.md` met de CSS class `informative`
-- `mermaid.md` zonder CSS class
-
-voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
-
-Deze classes zijn ook binnen de markdown files te gebruiken op de volgende manier:  
-```<div class="example">voorbeeld</div>```
-
-### Automatische controles
-Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
-uitgevoerd:  
-
-Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines
-gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
-van webapplicaties verbeterd voor zowel verschillende apparaten 
-als voor mensen met een beperking.
-
-Een link-check, deze check controleert of alle links die in het 
-document staan ook naar iets wijzen.
-
-outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repository.
-
-### Publiceren van documenten
-Na een update in de main branch wordt er een statische HTML en een PDF-versie gepubliceerd, indien de repo onder [Logius-standaarden](https://github.com/Logius-standaarden) op GitHub staat.
-De PDF-versie wordt aangemaakt indien `alternateFormats` in `config.js` geconfigureerd staat:
-```js
-alternateFormats: [
-  {
-	  label: "pdf",
-	  uri: "template.pdf",
-  },
-]
-```
+| Beschrijving van het document           | Gepubliceerde versie                  | Werk versie                             | Repository                                                   |
+| --------------------------------------- | ------------------------------------- | --------------------------------------- | ------------------------------------------------------------ |
+| 1. De LDV Normatieve Standaard | - | [Logboek dataverwerkingen (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen/) | [logboek-dataverwerkingen](https://github.com/Logius-standaarden/logboek-dataverwerkingen) |
+| 2. De Algemene Inleiding | - | [De Algemene Inleiding (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/)|[logboek-dataverwerkingen_Inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding)|
+| 3. het Juridische Beleidskader | - |[Juridisch Beleidskader (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen_Juridisch-beleidskader/)|[logboek-dataverwerkingen_Juridisch-beleidskader](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Juridisch-beleidskader/)|
+| 4. LDV Extensie Guideline | - |[Guideline voor het schrijven van een extensie voor LDV]()|[logboek-extensie-template](https://github.com/Logius-standaarden/logboek-extensie-template)|
+| 5. LDV Extensie voor objecten | - |[Onderzoek logboek dataverwerkingen voor (geo) objecten](https://geonovum.github.io/logboek-dataverwerkingen-voor-objecten/)|[logboek-dataverwerkingen-voor-objecten](https://github.com/geonovum/logboek-dataverwerkingen-voor-objecten/)|
