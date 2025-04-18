@@ -13,15 +13,24 @@ let respecConfig = {
   editors:
     [
       {
-        name: "Logius Standaarden",
+        name: "Nil Barua",
+        company: "Logius",
+        companyURL: "https://logius.nl",
+      },
+      {
+        name: "Tim van der Lippe",
         company: "Logius",
         companyURL: "https://logius.nl",
       }
-    ],
   authors:
     [
       {
-        name: "Logius Standaarden",
+        name: "Nil Barua",
+        company: "Logius",
+        companyURL: "https://logius.nl",
+      },
+      {
+        name: "Tim van der Lippe",
         company: "Logius",
         companyURL: "https://logius.nl",
       }
