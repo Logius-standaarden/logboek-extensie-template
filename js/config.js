@@ -22,7 +22,7 @@ let respecConfig = {
         company: "Logius",
         companyURL: "https://logius.nl",
       },
-    ]
+    ],
   authors:
     [
       {
