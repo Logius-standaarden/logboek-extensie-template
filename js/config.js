@@ -22,6 +22,7 @@ let respecConfig = {
         company: "Logius",
         companyURL: "https://logius.nl",
       }
+    ]
   authors:
     [
       {
@@ -34,7 +35,7 @@ let respecConfig = {
         company: "Logius",
         companyURL: "https://logius.nl",
       }
-    ],
+    ]
   github: "https://github.com/Logius-standaarden/logboek-extensie-template",
 
 
