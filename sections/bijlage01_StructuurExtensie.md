@@ -1,4 +1,5 @@
 ## Structuur van een extensie
+
 Elke extensie moet de volgende structuur hebben:
 
 1. Naam en beschrijving<br>
