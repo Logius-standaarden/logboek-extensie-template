@@ -9,6 +9,7 @@ let respecConfig = {
   shortName: "logboek-extensie-template",
   publishDate: "2025-03-31",
   publishVersion: "0.9",
+  prevVersion: [],
 
   editors:
     [
