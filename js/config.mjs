@@ -1,17 +1,22 @@
 import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
 
 loadRespecWithConfiguration({
-  useLogo: true,
-  useLabel: true,
   maxTocLevel: 3,
-  license: "cc-by",
-  specStatus: "WV",
+  specStatus: "CV",
   specType: "PR",
   pubDomain: "logboek",
-  shortName: "logboek-extensie-template",
-  publishDate: "2025-03-31",
-  publishVersion: "0.9",
+  shortName: "extensie-template",
+  publishDate: "2025-11-27",
+  publishVersion: "1.0.0",
   prevVersion: [],
+  // TODO: verwijder voor publicatie
+  latestVersion: "https://logius-standaarden.github.io/logboek-extensie-template/",
+  sotdText: {
+    nl: {
+      sotd: "Status van dit document",
+      cv: `Dit is een consultatieversie. We moedigen gebruikers aan om meldingen of suggesties aan te maken via GitHub. Mocht dit niet mogelijk zijn, dan kunt u ook een e-mail sturen naar api@logius.nl`,
+    },
+  },
 
   editors:
     [
