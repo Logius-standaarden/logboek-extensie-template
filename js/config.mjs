@@ -5,12 +5,12 @@ loadRespecWithConfiguration({
   useLabel: true,
   maxTocLevel: 3,
   license: "cc-by",
-  specStatus: "WV",
+  specStatus: "VV",
   specType: "PR",
   pubDomain: "logboek",
   shortName: "logboek-extensie-template",
-  publishDate: "2025-03-31",
-  publishVersion: "0.9",
+  publishDate: "2026-02-11",
+  publishVersion: "1.0.0",
   prevVersion: [],
 
   editors:
