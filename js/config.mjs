@@ -8,9 +8,9 @@ loadRespecWithConfiguration({
   specStatus: "WV",
   specType: "PR",
   pubDomain: "logboek",
-  shortName: "logboek-extensie-template",
-  publishDate: "2025-03-31",
-  publishVersion: "0.9",
+  shortName: "extensie-template",
+  publishDate: "2026-04-09",
+  publishVersion: "1.0.0",
   prevVersion: [],
 
   editors:
